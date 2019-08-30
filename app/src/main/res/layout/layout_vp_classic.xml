@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_classic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        android:background="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/tv_classic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="20dp"
+        android:text="诗在远方"
+        android:ems="1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/tv_classic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/tv_classic_title"
+        app:layout_constraintTop_toBottomOf="@+id/img_classic"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        android:text="心上无垢，林间有风"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>
